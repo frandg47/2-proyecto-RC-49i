@@ -46,16 +46,16 @@ footer {
     display: none;
 }
 
-.capa-cine {
-    width: 100%;
+.capa-auto {
+    width: 50%;
     object-fit: cover;
     overflow: hidden;
     position: relative;
     animation: oculta 5s;
 }
 
-#cine {
-    width: 100%;
+#autito {
+    width: 50%;
 }
 
 h1 {
@@ -146,7 +146,7 @@ h1 {
 
 @media only screen and (max-width:720px){
     
-    #cine {
+    #autito {
         object-fit: fill;
         position: relative;
         right: 10rem;
@@ -181,7 +181,7 @@ h1 {
         top:9%;
         width: 110%;
     }
-    #cine {
+    #autito {
         right: 7rem;
     }
 }
@@ -199,7 +199,7 @@ h1 {
         display: block;
     }
 
-    #cine {
+    #autito {
         right: 6rem;
     }
 }
@@ -211,7 +211,7 @@ h1 {
     .contenedor-video{
         top: 0%;
     }
-    #cine {
+    #autito {
         right: 5.7rem;
     }
 }
@@ -223,7 +223,7 @@ h1 {
     .mensaje-2 {
         height: 45vh;
     }
-    #cine {
+    #autito {
         right: 4.8rem;
         width: 170%;
     }
