@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Arapey&family=Poppins:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box;
+    font-family: 'Arapey', serif;
+    font-family: 'Poppins', sans-serif;
+}
+
+header nav {
+    background-color: #8D080D;
+}
+
+nav a {
+    color: white;
+}
+
+main {
+    background-color: white;
+}
+
+.logo {
+    height: 70px;
+}
+
+/* #hero {
+    background: url(../assets/images/Audi-RS3-2021-27.jpg);
+    background-position: center;
+    background-size: cover;
+} */
+
+#slider img {
+    object-fit: cover;
+    height: 100vh;
+}
+
+
+.espacio {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.titulo .linea {
+    width: 170px;
+    height: 5px;
+    background-color: red;
+    margin-left: 45px;
+    margin-bottom: 20px;
+}
+
+#galeria {
+    text-align: center;
+    margin-top: 120px;
+}
+
+#counter {
+    margin-top: 150px;
+    background-color: rgba(0, 0, 0, 0.884);
+    color: white;
+}
+
+#sedan {
+    width: 100%;
+}
+
+.btn-danger {
+    background-color: #8D080D;
+    border-color: #8D080D;
+}
