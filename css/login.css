@@ -1,3 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Arapey&family=Poppins:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box;
+    font-family: 'Arapey', serif;
+    font-family: 'Poppins', sans-serif;
+}
+
+.titulo {
+    display: flex;
+    align-items: center;
+    
+
+}
+
+.logo {
+    width: 13rem;
+    height: 13rem;
+
+}
+
 body {
     background-image: linear-gradient(rgba(5,7,12,.75),rgba(5,7,12,.75)),
         url(../assets/ildar-garifullin-TX2tgF4aFhI-unsplash.jpg);
