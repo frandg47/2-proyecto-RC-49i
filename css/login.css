@@ -28,6 +28,10 @@ body {
     background-size: cover; 
 }
 
-.login {
+.div-login {
     background: rgba(0,0,0,0.5);
+}
+
+#registro {
+    transform: all 300ms;
 }
