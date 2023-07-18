@@ -21,7 +21,7 @@ main {
 }
 
 .logo {
-    height: 70px;
+    height: 75px;
 }
 
 /* #hero {
@@ -38,7 +38,7 @@ main {
 
 .espacio {
     padding-top: 120px;
-    padding-bottom: 120px;
+    padding-bottom: 100px;
 }
 
 .titulo .linea {
