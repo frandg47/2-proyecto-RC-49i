@@ -18,8 +18,7 @@ body {
     background-image: linear-gradient(rgba(5,7,12,.75),rgba(5,7,12,.75)),
         url(../assets/ildar-garifullin-TX2tgF4aFhI-unsplash.jpg);
     background-repeat: no-repeat;
-    background-size: cover; 
-    
+    background-size: cover;     
 }
 
 .div-login {
