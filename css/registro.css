@@ -16,7 +16,7 @@
 
 body {
     background-image: linear-gradient(rgba(5,7,12,.75),rgba(5,7,12,.75)),
-        url(../assets/fondo3.jpg);
+        url(../assets/fondo-registro.jpg);
     background-repeat: no-repeat;
     background-size: cover;     
 }
