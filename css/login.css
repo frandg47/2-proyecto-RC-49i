@@ -11,14 +11,7 @@
 .titulo {
     display: flex;
     align-items: center;
-    
-
-}
-
-.logo {
-    width: 13rem;
-    height: 13rem;
-
+    padding-top: -20px;
 }
 
 body {
@@ -26,12 +19,53 @@ body {
         url(../assets/ildar-garifullin-TX2tgF4aFhI-unsplash.jpg);
     background-repeat: no-repeat;
     background-size: cover; 
+    
 }
 
 .div-login {
     background: rgba(0,0,0,0.5);
+    backdrop-filter: blur(10px);
 }
 
-#registro {
-    transform: all 300ms;
+.btn-danger {
+    background-color: #8c0c0c;
+    color: white;
+}
+
+.btn-danger:hover {
+    background-color: #ff1818;
+}
+
+a {
+    text-decoration: none;
+}
+
+.link {
+    color: #8c0c0c
+}
+
+.link:hover {
+    color: #ff2020;
+}
+
+.separador-redes{
+    display: inline-block;
+    position: relative;
+}
+
+.separador-redes::after,.separador-redes::before {
+    content: '';
+    position: absolute;
+    width: 10rem;
+    height: 2px;
+    background-color: white;
+    top: 0.7rem;
+}
+
+.separador-redes::before {
+    left: -10px
+}
+
+.separador-redes::after {
+    right: -10px
 }
