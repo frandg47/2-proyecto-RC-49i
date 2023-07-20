@@ -1,6 +1,3 @@
-main {
-    background-color: #000000;
-}
 
 
 
@@ -43,7 +40,8 @@ main {
 }
 
 #autito {
-    width: 100%;
+    background-size: cover;
+
 }
 
 h1 {
