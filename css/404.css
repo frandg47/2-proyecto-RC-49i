@@ -2,19 +2,7 @@ main {
     background-color: #000000;
 }
 
-footer {
-    position: relative;
-    z-index: 2;
-}
 
-.video-señal {
-    animation: oculta 5s forwards;   
-    opacity: 1;
-}
-
-.video-señal video {
-    width: 100%;
-}
 
 
 .maestro {
@@ -46,8 +34,8 @@ footer {
     display: none;
 }
 
-.capa-auto {
-    width: 50%;
+.autito-blanco {
+    width: 100%;
     object-fit: cover;
     overflow: hidden;
     position: relative;
@@ -55,7 +43,7 @@ footer {
 }
 
 #autito {
-    width: 50%;
+    width: 100%;
 }
 
 h1 {
@@ -71,7 +59,7 @@ h1 {
     text-align: center;
     font-family: var(--fuente-links);
     font-weight: 600;
-    color: #6f6f81;
+    color: #9c1c21;
     font-size: 1.3rem;
 }
 
@@ -102,25 +90,12 @@ h1 {
 }
 
 .boton:hover {
-    color: #0a58ca;
+    color: #9c1c21;
 }
 
-.señal-rota-movil {
-    display: none;
-}
 
-.señal-rota-movil-menor {
-    display: none;
-}
 
-.contenedor-video {
-    position: absolute;
-    width: 100%;
-    max-height: 100vh;
-    overflow: hidden;
-    left: 0;
-    top: 5%; 
-}
+
 @media only screen and (max-width:1116px){
     .mensaje-2{
         /* bottom: 30%; */
@@ -132,9 +107,7 @@ h1 {
     .mensaje {
         top: 11%;
     }
-    footer {
-        padding-top: 20vh;
-    }
+   
 }
 
 @media only screen and (max-width:875px){
@@ -153,17 +126,7 @@ h1 {
         width: 150%;
         height: 70vh;
     }
-    .señal-rota {
-        display: none;
-    }
-
-    .video-señal {
-        top:0;
-        width: 100%;
-    }
-    .señal-rota-movil {
-        display: block;
-    }
+    
 }
 
 @media only screen and (max-width:700px){
@@ -177,28 +140,14 @@ h1 {
 }
 
 @media only screen and (max-width:560px){
-    .video-señal {
-        top:9%;
-        width: 110%;
-    }
+   
     #autito {
-        
         right: 7rem;
     }
 }
 
 @media only screen and (max-width:420px){
-    .señal-rota-movil {
-        display: none;
-    }
 
-    .video-señal {
-        top:9%;
-        width: 100%;
-    }
-    .señal-rota-movil-menor {
-        display: block;
-    }
 
     #autito {
         right: 6rem;
@@ -206,12 +155,8 @@ h1 {
 }
 
 @media only screen and (max-width:390px){
-    .video-señal {
-        width: 110%;
-    }
-    .contenedor-video{
-        top: 0%;
-    }
+  
+   
     #autito {
         right: 5.7rem;
     }
