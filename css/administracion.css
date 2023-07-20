@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Arapey&family=Poppins:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arapey', serif;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: rgba(5, 3, 2, 0.932);
+    color: white;
+}
+
+main {
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+}
