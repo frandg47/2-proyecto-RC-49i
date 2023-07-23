@@ -9,11 +9,11 @@
 }
 
 body {
-    background-color: rgba(5, 3, 2, 0.932);
+    background-color: white;
     color: white;
 }
 
 main {
-    background: rgba(0, 0, 0, 0.5);
-    backdrop-filter: blur(10px);
+    background-color: rgba(0, 0, 0, 0.9);
 }
+
