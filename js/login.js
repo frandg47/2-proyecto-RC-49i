@@ -5,6 +5,7 @@ const usuarioRechazado = document.getElementById("usuarioRechazado");
 const divIngreso = document.querySelector("#btn-ingreso");
 const divRegistro = document.querySelector("#btn-registro");
 
+//validaciones desde js en formulario
 form.addEventListener("input", function () {
     const valorCorreo = inputEmail.value.trim();
     const valorContraseña = inputContraseña.value.trim();
@@ -29,17 +30,19 @@ form.addEventListener("input", function () {
     }
 });
 
+//inicializo ls
 let arrayUsuarios = JSON.parse(localStorage.getItem("usuarios")) || [];
 let arrayUsuario = [];
 
+//evento de ingreso de usuario
 form.addEventListener("submit", (e) => {
     e.preventDefault();
     let valorEmail = inputEmail.value;
     let valorContraseña = inputContraseña.value;
     let bandera = false;
-
     let usuarioEncontrado = 0;
 
+    //busqueda de usuario en ls
     for (let i = 0; i < arrayUsuarios.length; i++) {
         if (
             valorEmail === arrayUsuarios[i].email &&
@@ -50,13 +53,47 @@ form.addEventListener("submit", (e) => {
             break;
         }
     }
-
+    //El usuario actual se encuentra en login_success
     if (bandera === true) {
         arrayUsuario.push(usuarioEncontrado);
         form.reset();
         localStorage.setItem("login_success", JSON.stringify(arrayUsuario));
         window.location.href = "../index.html";
+        usuarioIngresado();
     } else {
         usuarioRechazado.innerHTML = "<p>Contraseña incorrecta o usuario no encontrado</p>";
     }
 });
+
+
+const usuarioIngresado = () => {
+
+    //inicio ls de usuario ingresado
+    const user = JSON.parse(localStorage.getItem("login_success")) || false;
+
+    //modificio navbar cuando ingresa usuario
+    if (user) {
+        dropUsuario.style.display = "block";
+        botonRegistro.style.display = "none";
+        botonIngreso.style.display = "none";
+    }
+
+    const logout = document.querySelector("#logout");
+
+    //modifico navbar cuando sale usuario
+    logout.addEventListener("click", () => {
+        localStorage.removeItem("login_success");
+        dropUsuario.style.display = "none";
+        botonIngreso.style.display = "block";
+        botonRegistro.style.display = "block";
+        liAdministracion.style.display = "none";
+
+        //redirijo usuario a index cuando sale
+        const location = window.location.href;
+        if (location == "./index.html") {
+            window.location.href = "./login.html";
+        } else {
+            window.location.href = "../html/login.html";
+        }
+    });
+}
