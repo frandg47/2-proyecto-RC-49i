@@ -3,7 +3,6 @@ const inputContraseña = document.getElementById("password");
 const form = document.getElementById("formulario-login");
 const usuarioRechazado = document.getElementById("usuarioRechazado");
 const divIngreso = document.querySelector("#btn-ingreso");
-const divRegistro = document.querySelector("#btn-registro");
 
 //validaciones desde js en formulario
 form.addEventListener("input", function () {
