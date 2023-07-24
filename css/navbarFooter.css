@@ -36,3 +36,19 @@ footer a {
 footer ul {
     list-style: none;
 }
+
+.logo {
+    transition: all .5s;
+}
+
+.logo:hover {
+    transform: scale(1.1);
+}
+
+.nav-link {
+    transition: all .5s;
+}
+
+.nav-link:hover {
+    transform: scale(1.1);
+}
