@@ -3,6 +3,7 @@ const inputContraseña = document.getElementById("password");
 const form = document.getElementById("formulario-login");
 const usuarioRechazado = document.getElementById("usuarioRechazado");
 const divIngreso = document.querySelector("#btn-ingreso");
+const dropUsuario = document.getElementById("dropdown-usuario");
 
 //validaciones desde js en formulario
 form.addEventListener("input", function () {
@@ -57,7 +58,7 @@ form.addEventListener("submit", (e) => {
         arrayUsuario.push(usuarioEncontrado);
         form.reset();
         localStorage.setItem("login_success", JSON.stringify(arrayUsuario));
-        window.location.href = "../index.html";
+        // window.location.href = "../index.html";
         usuarioIngresado();
     } else {
         usuarioRechazado.innerHTML = "<p>Contraseña incorrecta o usuario no encontrado</p>";
@@ -72,9 +73,8 @@ const usuarioIngresado = () => {
 
     //modificio navbar cuando ingresa usuario
     if (user) {
-        dropUsuario.style.display = "block";
-        botonRegistro.style.display = "none";
-        botonIngreso.style.display = "none";
+        dropUsuario.classList.remove("d-none");
+        divIngreso.classList.add("d-none"); 
     }
 
     const logout = document.querySelector("#logout");
@@ -82,9 +82,8 @@ const usuarioIngresado = () => {
     //modifico navbar cuando sale usuario
     logout.addEventListener("click", () => {
         localStorage.removeItem("login_success");
-        dropUsuario.style.display = "none";
-        botonIngreso.style.display = "block";
-        botonRegistro.style.display = "block";
+        dropUsuario.classList.add("d-none");
+        divIngreso.classList.remove("d-none"); 
         liAdministracion.style.display = "none";
 
         //redirijo usuario a index cuando sale
