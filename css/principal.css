@@ -119,3 +119,11 @@ footer i {
 footer a:hover {
     transform: scale(1.1);
 }
+
+.dropdown-menu[data-bs-popper] {
+    left: -280%;
+}
+
+.dropdown-item {
+    cursor: pointer;
+}

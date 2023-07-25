@@ -79,3 +79,7 @@ a {
 #usuarioRechazado p{
     color: #ff2020;
 }
+
+#logout {
+    cursor: pointer;
+}

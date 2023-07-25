@@ -75,23 +75,10 @@ const usuarioIngresado = () => {
     if (user) {
         dropUsuario.classList.remove("d-none");
         divIngreso.classList.add("d-none"); 
+        window.location.href = "../index.html";
+        console.log ("estoy ingresado")
     }
-
-    const logout = document.querySelector("#logout");
-
-    //modifico navbar cuando sale usuario
-    logout.addEventListener("click", () => {
-        localStorage.removeItem("login_success");
-        dropUsuario.classList.add("d-none");
-        divIngreso.classList.remove("d-none"); 
-        liAdministracion.style.display = "none";
-
-        //redirijo usuario a index cuando sale
-        const location = window.location.href;
-        if (location == "./index.html") {
-            window.location.href = "./login.html";
-        } else {
-            window.location.href = "../html/login.html";
-        }
-    });
+    console.log ("estoy ingresado en index")
 }
+
+
