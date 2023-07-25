@@ -8,6 +8,10 @@
     font-family: 'Poppins', sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 header nav {
     background-color: #8D080D;
 }
@@ -24,11 +28,6 @@ main {
     height: 75px;
 }
 
-/* #hero {
-    background: url(../assets/images/Audi-RS3-2021-27.jpg);
-    background-position: center;
-    background-size: cover;
-} */
 
 #slider img {
     object-fit: cover;
@@ -41,21 +40,10 @@ main {
     padding-bottom: 100px;
 }
 
-.titulo .linea {
-    width: 170px;
-    height: 5px;
-    background-color: red;
-    margin-left: 45px;
-    margin-bottom: 20px;
-}
 
-#galeria {
-    text-align: center;
-    margin-top: 120px;
-}
 
 #counter {
-    margin-top: 150px;
+    margin-top: 50px;
     background-color: rgba(0, 0, 0, 0.884);
     color: white;
 }
@@ -67,4 +55,75 @@ main {
 .btn-danger {
     background-color: #8D080D;
     border-color: #8D080D;
+}
+
+/* #cards {
+    padding-bottom: 180px;
+} */
+
+#cards {
+    padding-bottom: 200px;
+}
+
+
+
+
+/* footer */
+
+footer {
+    background-color: rgba(0, 0, 0, 0.884);
+    color: white;
+}
+
+footer img {
+    height: 100px;
+}
+
+footer a {
+    color: white;
+}
+
+footer ul {
+    list-style: none;
+}
+
+.logo {
+    transition: all .5s;
+}
+
+.logo:hover {
+    transform: scale(1.1);
+}
+
+.nav-link {
+    transition: all .5s;
+}
+
+.nav-link:hover {
+    transform: scale(1.1);
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    transition: all .5s;
+}
+
+footer i {
+    color:#8D080D;
+    text-decoration: none;
+}
+
+
+
+footer a:hover {
+    transform: scale(1.1);
+}
+
+.dropdown-menu[data-bs-popper] {
+    left: -280%;
+}
+
+.dropdown-item {
+    cursor: pointer;
 }
