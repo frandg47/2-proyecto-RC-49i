@@ -9,131 +9,99 @@
         integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <link rel="shortcut icon" href="../assets/icono-pestaña.png" type="image/x-icon">
     <link rel="stylesheet" href="../css/administracion.css">
+    <link rel="stylesheet" href="../css/navbarFooter.css">
     <title>RC autos</title>
 </head>
 
 <body>
+    <!-- inicio de navbar -->
+    <header>
+        <nav class="navbar navbar-expand-lg text-white">
+            <div class="container-fluid ">
+                <a class="navbar-brand ps-4 " href="../index.html">
+                    <img src="../assets/logonav.png" alt="" class="logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto me-5 mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active text-white" aria-current="page" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="./acercaDeNosotros.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white d-block" href="#" id="btn-ingreso">Login</a>
+                        </li>
+                        <li class="dropdown-center mt-lg-0 mt-2 mt-sm-2 d-none me-5" id="dropdown-usuario">
+                            <button class="btn btn-outline-light dropdown-toggle" type="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-person-circle" viewBox="0 0 16 16">
+                                    <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+                                    <path fill-rule="evenodd"
+                                        d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z" />
+                                </svg>
+                            </button>
+                            <ul class="dropdown-menu ">
+                                <li>
+                                    <p class="dropdown-item "><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                            height="16" fill="currentColor" class="bi bi-person-square"
+                                            viewBox="0 0 16 16">
+                                            <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+                                            <path
+                                                d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm12 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1v-1c0-1-1-4-6-4s-6 3-6 4v1a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12z" />
+                                        </svg><span id="drop-nombre"></span></p>
+                                </li>
+                                <li>
+                                    <p class="dropdown-item mx-auto" id="drop-correo-imagen"><svg id="mi-svg"
+                                            xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-envelope-at-fill position a"
+                                            viewBox="0 0 16 16">
+                                            <path
+                                                d="M2 2A2 2 0 0 0 .05 3.555L8 8.414l7.95-4.859A2 2 0 0 0 14 2H2Zm-2 9.8V4.698l5.803 3.546L0 11.801Zm6.761-2.97-6.57 4.026A2 2 0 0 0 2 14h6.256A4.493 4.493 0 0 1 8 12.5a4.49 4.49 0 0 1 1.606-3.446l-.367-.225L8 9.586l-1.239-.757ZM16 9.671V4.697l-5.803 3.546.338.208A4.482 4.482 0 0 1 12.5 8c1.414 0 2.675.652 3.5 1.671Z" />
+                                            <path
+                                                d="M15.834 12.244c0 1.168-.577 2.025-1.587 2.025-.503 0-1.002-.228-1.12-.648h-.043c-.118.416-.543.643-1.015.643-.77 0-1.259-.542-1.259-1.434v-.529c0-.844.481-1.4 1.26-1.4.585 0 .87.333.953.63h.03v-.568h.905v2.19c0 .272.18.42.411.42.315 0 .639-.415.639-1.39v-.118c0-1.277-.95-2.326-2.484-2.326h-.04c-1.582 0-2.64 1.067-2.64 2.724v.157c0 1.867 1.237 2.654 2.57 2.654h.045c.507 0 .935-.07 1.18-.18v.731c-.219.1-.643.175-1.237.175h-.044C10.438 16 9 14.82 9 12.646v-.214C9 10.36 10.421 9 12.485 9h.035c2.12 0 3.314 1.43 3.314 3.034v.21Zm-4.04.21v.227c0 .586.227.8.581.8.31 0 .564-.17.564-.743v-.367c0-.516-.275-.708-.572-.708-.346 0-.573.245-.573.791Z" />
+                                        </svg><span id="drop-correo"></span></p></span>
+                                </li>
+                                <li><a class="dropdown-item"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                            height="16" fill="currentColor" class="bi bi-box-arrow-left"
+                                            viewBox="0 0 16 16" id="logout">
+                                            <path fill-rule="evenodd"
+                                                d="M6 12.5a.5.5 0 0 0 .5.5h8a.5.5 0 0 0 .5-.5v-9a.5.5 0 0 0-.5-.5h-8a.5.5 0 0 0-.5.5v2a.5.5 0 0 1-1 0v-2A1.5 1.5 0 0 1 6.5 2h8A1.5 1.5 0 0 1 16 3.5v9a1.5 1.5 0 0 1-1.5 1.5h-8A1.5 1.5 0 0 1 5 12.5v-2a.5.5 0 0 1 1 0v2z" />
+                                            <path fill-rule="evenodd"
+                                                d="M.146 8.354a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L1.707 7.5H10.5a.5.5 0 0 1 0 1H1.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3z" />
+                                        </svg>Salir</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- fin de navbar -->
     <main class="container">
         <article>
             <h1 class="d-flex mt-5 mb-1 p-3">Administracion</h1>
             <hr>
-            <div class="button-agregar">
-                <section>
-                    <!--Inicio modal con Formulario-->
-                    <div id="modal" class="modal" tabindex="-1">
-                        <div class="modal-dialog">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h5 class="modal-title">Agregar Producto</h5>
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                        aria-label="Close"></button>
-                                </div>
-                                <form id="id-form" class="needs-validation" novalidate>
-                                    <div class="modal-body">
-                                        <div>
-                                            <label for="codigo" class="form-label">El codigo se genera de forma
-                                                automatica</label>
-                                            <input type="text" id="codigoProducto" class="form-control"
-                                                placeholder="codigo" disabled>
-                                            <div class="valid-feedback">
-                                                Todo bien.
-                                            </div>
-                                            <div class="invalid-feedback">
-                                                El valor minimo es 8 y maximo es 16.
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <label class="form-label" for="categoria">Categoria</label>
-                                            <select class="form-select" id="categoria" required>
-                                                <option selected>Serum</option>
-                                                <option value="ProtectorSolar">ProtectorSolar</option>
-                                                <option value="Exfoliantes">Exfoliantes</option>
-                                                <option value="Mascarillas">Mascarillas</option>
-                                                <option value="All">All</option>
-                                            </select>
-                                        </div>
-                                        <div>
-                                            <label for="nombreProducto" class="form-label"> Nombre</label>
-                                            <input type="text" id="nombreProducto" class="form-control" required
-                                                minlength="5" maxlength="20" placeholder="Nombre"
-                                                pattern="[a-zA-Z]+(\s[a-zA-Z]+)?">
-                                            <div class="valid-feedback">
-                                                Todo bien.
-                                            </div>
-                                            <div class="invalid-feedback">
-                                                El nombre ingresado debe de contar con un minimo de 5 letras y maximo
-                                                20.
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <label for="precio" class="form-label">Precio</label>
-                                            <input type="text" id="precio" class="form-control" required
-                                                pattern="[0-9]*" min="1" maxlength="12" placeholder="Precio">
-                                            <div class="valid-feedback">
-                                                Todo bien.
-                                            </div>
-                                            <div class="invalid-feedback">
-                                                El valor numerico ingresado minimo es de 1 y el maximo es de 12
-                                                caracteres
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <label for="descripcion" class="form-label"> Descripcion</label>
-                                            <textarea id="descripcion" class="form-control " required minlength="25"
-                                                maxlength="200"></textarea>
-                                            <div class="valid-feedback">
-                                                Todo bien.
-                                            </div>
-                                            <div class="invalid-feedback">
-                                                El texto ingresado debe de contar con un minimo de 25 caracteres y un
-                                                maximo de 200.
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <label for="url" class="form-label">Imagen por URL</label>
-                                            <input type="text" id="url" class="form-control" required
-                                                placeholder="URL de la imagen">
-                                            <div class="valid-feedback">
-                                                Todo bien.
-                                            </div>
-                                            <div class="invalid-feedback">
-                                                Debes poner un URL dentro del espacio vacio.
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <label for="url2" class="form-label">Animacion para card por URL</label>
-                                            <input type="text" id="url2" class="form-control"
-                                                placeholder="URL de una segunda imagen para la animacion">
-                                        </div>
-                                    </div>
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-secondary"
-                                            data-bs-dismiss="modal">Cerrar</button>
-                                        <button type="submit" class="btn btn-primary" id="cerrarModal">Guardar
-                                            cambios</button>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                    <!--Fin modal con Formulario-->
-                </section>
-            </div>
         </article>
         <article>
             <section>
                 <!--Inicio Tabla de Productos-->
-                <h2 class="d-flex justify-content-center mt-5 mb-5">Tabla de Productos</h2>
+                <h2 class="d-flex justify-content-center mt-5 mb-5">Modelos disponibles</h2>
                 <div class="tables table-responsive mt-5 mb-5">
                     <table class="table table-dark table-striped" id="listadeproductos">
                         <thead>
                             <tr>
                                 <th scope="col">Codigo</th>
-                                <th scope="col">Categoria</th>
+                                <th scope="col">Modelo</th>
                                 <th scope="col">Nombre</th>
                                 <th scope="col">Precio</th>
                                 <th scope="col">Descripcion</th>
-                                <th scope="col">URL</th>
                                 <th scope="col">URL</th>
                                 <th scope="col">Acciones</th>
                             </tr>
@@ -142,8 +110,10 @@
                     </table>
                 </div>
                 <hr>
-                <button type="button" class="btn-dark btn btn-lg" data-bs-toggle="modal"
-                    data-bs-target="#modal">Agregar Producto</button>
+                <!-- boton de modal -->
+                <button type="button" class="btn btn-dark btn-lg" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    Agregar auto
+                </button>
                 <!--Fin Tabla de Productos-->
             </section>
             <section>
@@ -167,6 +137,122 @@
         </article>
     </main>
 
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5 text-black" id="exampleModalLabel">Nuevo Auto</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="id-form" class="needs-validation" novalidate>
+                        <div class="modal-body">
+                            <div class="mb-3">
+                                <label for="codigo" class="form-label">El codigo se genera de forma
+                                    automatica</label>
+                                <input type="text" id="codigoProducto" class="form-control" placeholder="codigo"
+                                    disabled>
+                                <div class="valid-feedback">
+                                    Todo bien.
+                                </div>
+                                <div class="invalid-feedback">
+                                    El valor minimo es 8 y maximo es 16.
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <input type="text" id="nombreProducto" class="form-control" required minlength="5"
+                                    maxlength="20" placeholder="Modelo" pattern="[a-zA-Z]+(\s[a-zA-Z]+)?">
+                                <div class="valid-feedback">
+                                    Todo bien.
+                                </div>
+                                <div class="invalid-feedback">
+                                    El nombre ingresado debe de contar con un minimo de 5 letras y maximo
+                                    20.
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <input type="text" id="precio" class="form-control" required pattern="[0-9]*" min="1"
+                                    maxlength="12" placeholder="Precio">
+                                <div class="valid-feedback">
+                                    Todo bien.
+                                </div>
+                                <div class="invalid-feedback">
+                                    El valor numerico ingresado minimo es de 1 y el maximo es de 12
+                                    caracteres
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <textarea id="descripcion" class="form-control " required minlength="25"
+                                    maxlength="200" placeholder="Escriba una descripcion del modelo"></textarea>
+                                <div class="valid-feedback">
+                                    Todo bien.
+                                </div>
+                                <div class="invalid-feedback">
+                                    El texto ingresado debe de contar con un minimo de 25 caracteres y un
+                                    maximo de 200.
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <input type="text" id="url" class="form-control" required
+                                    placeholder="URL de la imagen">
+                                <div class="valid-feedback">
+                                    Todo bien.
+                                </div>
+                                <div class="invalid-feedback">
+                                    Debes poner un URL dentro del espacio vacio.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                            <button type="submit" class="btn btn-primary" id="cerrarModal">Guardar
+                                cambios</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- fin de modal -->
+    <!-- inicio de footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 text-center ps-auto mt-3">
+                    <a href="#">
+                        <img src="../assets/logonav.png" alt="">
+                    </a>
+                    <h4>RC Autos</h4>
+                </div>
+                <div class="col-lg-3 text-center mt-3">
+                    <h4>Redes Sociales</h4>
+                    <div class="mt-4 d-flex justify-content-evenly">
+                        <a href="./error404.html"><i class="bi bi-facebook"></i></a>
+                        <a href="./error404.html"><i class="bi bi-twitter"></i></a>
+                        <a href="./error404.html"><i class="bi bi-instagram"></i></a>
+                        <a href="./error404.html"><i class="bi bi-tiktok"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-3 mt-3">
+                    <h4 class="text-center">Metodos de Pago</h4>
+                    <ul class="text-center pe-4">
+                        <li>Financiacion</li>
+                        <li>Plan Uli</li>
+                        <li>Plan Franco</li>
+                        <li>Plan Bruno</li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 text-center mt-3 d-flex flex-column">
+                    <a href="./error404.html" class="mt-4">Contáctanos</a>
+                    <a href="./error404.html" class="mt-2">Sucursales</a>
+                    <a href="./error404.html" class="mt-2">Politicas de Privacidad</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- fin de footer -->
+    <script src="../js/administracion.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
         crossorigin="anonymous"></script>

@@ -9,11 +9,19 @@
 }
 
 body {
-    background-color: white;
+    background-image: url(../assets/fondo-administracion.avif);
     color: white;
+    background-repeat: no-repeat;
+    background-size: cover;
+
 }
 
 main {
     background-color: rgba(0, 0, 0, 0.9);
+    backdrop-filter: blur(10px);
+}
+
+textarea {
+    resize: none;
 }
 
