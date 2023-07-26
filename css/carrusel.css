@@ -36,6 +36,7 @@
      object-fit: contain;
      border-top-left-radius: 15px;
      border-top-right-radius: 15px;
+     transition: all .5s;
  
  }
  .slider .swiper-slide .card-description{
@@ -70,4 +71,8 @@
    padding-top: 190px;
    color: #8D080D;
    left: 30px;
+}
+
+.slider .swiper-slide img:hover {
+   transform: scale(1.05);
 }
