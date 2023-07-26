@@ -1,3 +1,5 @@
+// import { arraynumeros, Numerorandom } from "./numerorandom.js";
+
 const obtenerUsuarios = JSON.parse(localStorage.getItem("usuarios"))
 const tablaUsuarios = document.getElementById("tablaUsuarios")
 

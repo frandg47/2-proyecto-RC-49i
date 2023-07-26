@@ -11,9 +11,9 @@ Logout.addEventListener("click", () => {
     li_Administracion.classList.add("d-none");
 
     //redirijo usuario a index cuando sale
-    const location = "index.html";
-    if (location) {
-        window.location.href = "./html/login.html";
+    const location = window.location.href;
+    if (location == "./acercaDenosotros.html") {
+        window.location.href = "./login.html";
     } else {
         window.location.href = "../index.html";
     }
