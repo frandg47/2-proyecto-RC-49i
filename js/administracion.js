@@ -1,7 +1,7 @@
 const obtenerUsuarios = JSON.parse(localStorage.getItem("usuarios"))
-
-
 const tablaUsuarios = document.getElementById("tablaUsuarios")
+
+
 
 obtenerUsuarios.forEach((usuario) => {
     const fila = `
