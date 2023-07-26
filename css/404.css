@@ -1,0 +1,58 @@
+body
+
+{
+    margin-top:20px;
+}
+
+.cover-background 
+{
+    position: relative;
+    background-size: cover;
+    overflow: hidden;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+.p-0
+      {
+    padding: 0;
+}
+
+
+section 
+
+{
+    padding: 120px 0;
+    overflow: hidden;
+    background: #fff;
+}
+
+.error-page {
+    background-image: linear-gradient(rgba(5, 7, 12, .75), rgba(5, 7, 12, .75));
+    /* -webkit-backdrop-filter: blur(9px); */
+    /* backdrop-filter: blur(15px); */
+    border: 1px solid #fff;
+    padding: 80px 20px;
+}
+
+
+.text-center
+
+ {
+    text-align: center;
+}
+
+.error-page h1 {
+    font-size: 200px;
+    line-height: 1;
+    font-weight: 600;
+}
+
+
+.text-secondary {
+    color: #fff;
+}
+.mb-4 {
+    margin-bottom: 1.5rem;
+}
