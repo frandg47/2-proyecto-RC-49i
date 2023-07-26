@@ -28,10 +28,9 @@ main {
     height: 75px;
 }
 
-
-#slider img {
-    object-fit: cover;
-    height: 100vh;
+.container-fluid {
+    padding-left: 0px;
+    padding-right: 0px;
 }
 
 
@@ -57,16 +56,35 @@ main {
     border-color: #8D080D;
 }
 
-/* #cards {
-    padding-bottom: 180px;
-} */
+
 
 #cards {
     padding-bottom: 200px;
 }
 
+.hero {
+    position: relative;
+    width: 100%;
+}
 
 
+.imagen {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    transition: .5s ease;
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
 
 /* footer */
 
