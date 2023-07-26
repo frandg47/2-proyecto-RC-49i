@@ -19,7 +19,8 @@ if (usuarioAdmin && usuariosLogeado && usuariosLogeado.length > 0) {
     usuarioAdmin.email === usuario.email &&
     usuarioAdmin.contraseña === usuario.contraseña
   ) {
-    liAdministracion.style.display = "block";
+    liAdministracion.classList.remove("d-none");
+    liAdministracion.classList.add("d-block");
   }
 
   dropUsuario.classList.remove("d-none");
