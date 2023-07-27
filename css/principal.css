@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Arapey&family=Poppins:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box;
+    font-family: 'Arapey', serif;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+header nav {
+    background-color: #8D080D;
+}
+
+nav a {
+    color: white;
+}
+
+main {
+    background-color: white;
+}
+
+.logo {
+    height: 75px;
+}
+
+/* .container-fluid {
+    padding-left: 0px;
+    padding-right: 0px;
+} */
+
+
+.espacio {
+    padding-top: 120px;
+    padding-bottom: 100px;
+}
+
+
+
+#counter {
+    margin-top: 50px;
+    background-color: rgba(0, 0, 0, 0.884);
+    color: white;
+}
+
+#sedan {
+    width: 100%;
+}
+
+.btn-danger {
+    background-color: #8D080D;
+    border-color: #8D080D;
+}
+
+
+
+.hero {
+    position: relative;
+    width: 100%;
+}
+
+
+.imagen {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    transition: .5s ease;
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+
+/* footer */
+
+footer {
+    background-color: rgba(0, 0, 0, 0.884);
+    color: white;
+}
+
+footer img {
+    height: 100px;
+}
+
+footer a {
+    color: white;
+}
+
+footer ul {
+    list-style: none;
+}
+
+.logo {
+    transition: all .5s;
+}
+
+.logo:hover {
+    transform: scale(1.1);
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    transition: all .5s;
+}
+
+footer i {
+    color:#8D080D;
+    text-decoration: none;
+}
+
+
+
+footer a:hover {
+    transform: scale(1.1);
+}
+
+.dropdown-menu[data-bs-popper] {
+    left: -280%;
+}
+
+.dropdown-item {
+    cursor: pointer;
+}

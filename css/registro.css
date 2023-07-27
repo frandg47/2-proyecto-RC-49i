@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Arapey&family=Poppins:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box;
+    font-family: 'Arapey', serif;
+    font-family: 'Poppins', sans-serif;
+}
+
+.titulo {
+    display: flex;
+    align-items: center;
+    padding-top: -20px;
+}
+
+body {
+    background-image: linear-gradient(rgba(5,7,12,.75),rgba(5,7,12,.75)),
+        url(../assets/fondo-registro.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;     
+}
+
+.div-login {
+    background: rgba(0,0,0,0.5);
+    backdrop-filter: blur(10px);
+}
+
+.btn-danger {
+    background-color: #8c0c0c;
+    color: white;
+}
+
+.btn-danger:hover {
+    background-color: #ff1818;
+}
+
+a {
+    text-decoration: none;
+}
+
+.link {
+    color: #8c0c0c
+}
+
+.link:hover {
+    color: #ff2020;
+}
+
+.separador-redes{
+    display: inline-block;
+    position: relative;
+}
+
+.separador-redes::after,.separador-redes::before {
+    content: '';
+    position: absolute;
+    width: 10rem;
+    height: 2px;
+    background-color: white;
+    top: 0.7rem;
+}
+
+.separador-redes::before {
+    left: -10px
+}
+
+.separador-redes::after {
+    right: -10px
+}
+
+.form-control:focus {
+    box-shadow: -1px 1px 11px 1px rgba(237, 12, 12, 0.75);
+    -webkit-box-shadow: -1px 1px 11px 1px rgba(237, 12, 12, 0.75);
+    -moz-box-shadow: -1px 1px 11px 1px rgba(237, 12, 12, 0.75);
+}

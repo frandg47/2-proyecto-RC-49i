@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Arapey&family=Poppins:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box;
+    font-family: 'Arapey', serif;
+    font-family: 'Poppins', sans-serif;
+}
+
+header nav {
+    background-color: #8D080D;
+}
+
+nav a {
+    color: white;
+}
+
+.logo {
+    height: 75px;
+}
+
+footer {
+    background-color: rgba(0, 0, 0, 0.884);
+    color: white;
+}
+
+footer img {
+    height: 100px;
+}
+
+footer a {
+    color: white;
+}
+
+footer ul {
+    list-style: none;
+}
+
+.logo {
+    transition: all .5s;
+}
+
+.logo:hover {
+    transform: scale(1.1);
+}
+
+.nav-link {
+    transition: all .5s;
+}
+
+.nav-link:hover {
+    transform: scale(1.02);
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    transition: all .5s;
+}
+
+footer i {
+    color:#8D080D;
+    text-decoration: none;
+}
+
+
+
+footer a:hover {
+    transform: scale(1.1);
+}
+
+.dropdown-menu[data-bs-popper] {
+    left: -280%;
+}
+
+.dropdown-item {
+    cursor: pointer;
+}
