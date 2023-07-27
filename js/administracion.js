@@ -1,4 +1,4 @@
-import { arraynumeros, Numerorandom } from "./numerorandom.js";
+import { arraynumeros, Numerorandom } from "./numeroRandom.js";
 
 //Inicio script de bootstrap para validar el formulario
 (() => {
