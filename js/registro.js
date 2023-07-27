@@ -78,17 +78,6 @@ form.addEventListener("input", function () {
 });
 
 
-// const admin = {
-//     nombre: "admin",
-//     apellido: "admin",
-//     email: "admin@admin.com",
-//     contraseña: "Admin123",
-// };
-
-// let arrayUsuarios = JSON.parse(localStorage.getItem("usuarios")) || [];
-// arrayUsuarios[0] = admin;
-// localStorage.setItem("usuarios", JSON.stringify(arrayUsuarios));
-
 form.addEventListener("submit", (e) => {
     e.preventDefault();
     let valorNombre = inputNombre.value;
