@@ -174,6 +174,19 @@ function agregarproducto() {
     listaProductos.querySelector("tbody").innerHTML = "";
 
     productos.forEach((producto) => {
+        const botonBorrar = (codigo) => {
+            if (codigo === "A01") {
+              return "d-none"
+            } else if (codigo === "A02") {
+              return "d-none"
+            } else if (codigo === "A03") {
+              return "d-none"
+            } else if (codigo === "A04") {
+                return "d-none"
+              } else {
+              return ""
+            }
+          }
         const tr = document.createElement("tr");
         tr.id = `${producto.codigo}`;
         tr.innerHTML = `
@@ -188,7 +201,7 @@ function agregarproducto() {
     <button class="btn btn-outline-secondary editar" data-codigo="${producto.codigo}" data-bs-toggle="modal"
     data-bs-target="#exampleModal">Editar</button>
     </div>
-    <button class="btn btn-outline-secondary eliminar mt-2" data-codigo="${producto.codigo}" class="btn btn-outline-secondary">Borrar</button>
+    <button class="btn btn-outline-secondary eliminar mt-2 ${botonBorrar(producto.codigo)}" data-codigo="${producto.codigo}" class="btn btn-outline-secondary">Borrar</button>
     </td>
     `;
         listaProductos.querySelector("tbody").appendChild(tr);
@@ -262,13 +275,19 @@ const tablaUsuarios = document.getElementById("tablaUsuarios")
 
 
 obtenerUsuarios.forEach((usuario) => {
+    const botonBorrar = (nombre) => {
+        if (nombre === "admin") {
+          return "d-none"
+        }else {
+          return ""
+        }}
     const fila = `
   <tr id="fila-${usuario.email}">
     <th scope="row">${usuario.nombre}</th>
     <td>${usuario.email}</td>
     <td>${usuario.contraseña}</td>
     <td>
-      <button class="btn btn-outline-secondary eliminarusuario" data-correo="${usuario.email}">Borrar</button>
+      <button class="btn btn-outline-secondary eliminarusuario ${botonBorrar(usuario.nombre)}" data-correo="${usuario.email}">Borrar</button>
     </td>
   </tr>
   `;

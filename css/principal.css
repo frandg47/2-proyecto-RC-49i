@@ -28,10 +28,10 @@ main {
     height: 75px;
 }
 
-.container-fluid {
+/* .container-fluid {
     padding-left: 0px;
     padding-right: 0px;
-}
+} */
 
 
 .espacio {
@@ -106,14 +106,6 @@ footer ul {
 }
 
 .logo:hover {
-    transform: scale(1.1);
-}
-
-.nav-link {
-    transition: all .5s;
-}
-
-.nav-link:hover {
     transform: scale(1.1);
 }
 
