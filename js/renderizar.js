@@ -18,7 +18,7 @@ if (producto && Array.isArray(producto)) {
           <p>Precio: <span>${producto.precio}</span></p>
         </div>
         <div class="card-link">
-          <a href="${producto.enlace}">Ver más</a>
+          <a href="./html/error404.html">Ver más</a>
         </div>
       </div>
     `;
