@@ -42,7 +42,7 @@
  .slider .swiper-slide .card-description{
      padding:1rem 1rem;
  }
- .slider .swiper-slide .card-title,.container .swiper-slide .card-text{
+ .slider .swiper-slide .card-title, .container .swiper-slide .card-text{
     margin-bottom: .5rem;
  }
  .slider .swiper-slide .card-link{
