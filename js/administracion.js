@@ -43,7 +43,7 @@ import { arraynumeros, Numerorandom } from "./numerorandom.js";
 //Fin script de bootstrap para validar el formulario
 
 const auto1 = {
-    codigo: "01",
+    codigo: "A01",
     nombre: "AMG GT",
     precio: "40000",
     categoria: "Deportivo",
@@ -52,7 +52,7 @@ const auto1 = {
 }
 
 const auto2 = {
-    codigo: "02",
+    codigo: "A02",
     nombre: "A 250 Hatchback",
     precio: "35000",
     categoria: "Hatchback",
@@ -61,7 +61,7 @@ const auto2 = {
 }
 
 const auto3 = {
-    codigo: "03",
+    codigo: "A03",
     nombre: "GLC",
     precio: "20000",
     categoria: "SUV",
@@ -70,7 +70,7 @@ const auto3 = {
 }
 
 const auto4 = {
-    codigo: "04",
+    codigo: "A04",
     nombre: "Sprinter",
     precio: "70000",
     categoria: "SUV",

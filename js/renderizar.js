@@ -16,6 +16,18 @@ document.addEventListener('DOMContentLoaded', function () {
         const nuevaCard = document.createElement('div');
         nuevaCard.classList.add('swiper-slide');
 
+        urldeAutos = (codigo) => {
+          if (codigo === "A01") {
+            return "./html/paginaDetalle1.html"
+          } else if (codigo === "A02") {
+            return "./html/paginaDetalle2.html"
+          } else if (codigo === "A03") {
+            return "./html/paginaDetalle3.html"
+          } else {
+            return "./html/error404.html"
+          }
+        }
+
         nuevaCard.innerHTML = `
         <img src="${producto.url}" alt="" class="product-image">
         <div class="card-description">
@@ -27,7 +39,7 @@ document.addEventListener('DOMContentLoaded', function () {
             <p>Precio: <span>US$${producto.precio}</span></p>
           </div>
           <div class="card-link">
-            <a href="./html/error404.html">Ver más</a>
+            <a  href=${urldeAutos(producto.codigo)}>Ver más</a>
           </div>
         </div>
       `;
