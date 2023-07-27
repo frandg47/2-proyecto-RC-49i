@@ -13,7 +13,7 @@ RC Autos es un proyecto de e-commerce de venta de autos desarrollado por Rolling
   <li>Página de Detalle</li>
 </ul>
 <h2>Demo</h2>
-<a href="https://proyecto-lumincare.netlify.app/">RC Autos</a>
+<a href="https://rcautos.netlify.app/">RC Autos</a>
 <p>Usuario Administrador (Email: "admin@admin.com". Password: "Admin123")</p>
 <h2>Librerias :</h2>
 <ul>
