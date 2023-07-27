@@ -1,30 +1,50 @@
 const producto = JSON.parse(localStorage.getItem('productos'));
 
-// Comprobar si hay productos seleccionados en el Local Storage
-if (producto && Array.isArray(producto)) {
-  producto.forEach((producto) => {
-    // Crear una nueva card con los datos del producto seleccionado
-    const nuevaCard = document.createElement('div');
-    nuevaCard.classList.add('swiper-slide');
+document.addEventListener('DOMContentLoaded', function () {
+  // Obtener los elementos relevantes del DOM
+  const categoryButtons = document.querySelectorAll('.btn-filter');
+  const swiperWrapper = document.querySelector('.swiper-wrapper');
 
-    nuevaCard.innerHTML = `
-      <img src="${producto.url}" alt="" class="product-image">
-      <div class="card-description">
-        <div class="card-title">
-          <h4>${producto.nombre}</h4>
-        </div>
-        <div class="card-text">
-          <p>${producto.descripcion}</p>
-          <p>Precio: <span>${producto.precio}</span></p>
-        </div>
-        <div class="card-link">
-          <a href="./html/error404.html">Ver más</a>
-        </div>
-      </div>
-    `;
+  // Función para mostrar las tarjetas según la categoría seleccionada
+  function mostrarTarjetasSegunCategoria(categoria) {
+    // Limpiar el contenedor de tarjetas
+    swiperWrapper.innerHTML = '';
 
-    // Agregar la nueva card a la lista de cards existente
-    const swiperContainer = document.querySelector('.swiper-wrapper');
-    swiperContainer.appendChild(nuevaCard);
+    producto.forEach((producto) => {
+      // Si la categoría seleccionada es "all" o el producto coincide con la categoría seleccionada, mostrar la tarjeta
+      if (categoria === 'all' || producto.categoria === categoria) {
+        const nuevaCard = document.createElement('div');
+        nuevaCard.classList.add('swiper-slide');
+
+        nuevaCard.innerHTML = `
+        <img src="${producto.url}" alt="" class="product-image">
+        <div class="card-description">
+          <div class="card-title">
+            <h4>${producto.nombre}</h4>
+          </div>
+          <div class="card-text">
+            <p>${producto.descripcion}</p>
+            <p>Precio: <span>US$${producto.precio}</span></p>
+          </div>
+          <div class="card-link">
+            <a href="./html/error404.html">Ver más</a>
+          </div>
+        </div>
+      `;
+        swiperWrapper.appendChild(nuevaCard);
+      }
+    });
+  }
+
+  // Evento para detectar clics en los botones de categoría y mostrar las tarjetas según la categoría seleccionada
+  categoryButtons.forEach((button) => {
+    button.addEventListener('click', function (event) {
+      event.preventDefault();
+      const categoriaSeleccionada = this.getAttribute('data-filter');
+      mostrarTarjetasSegunCategoria(categoriaSeleccionada);
+    });
   });
-}
+
+  // Mostrar todas las tarjetas inicialmente (sin filtrar)
+  mostrarTarjetasSegunCategoria('all');
+});
